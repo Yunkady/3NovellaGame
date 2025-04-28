@@ -1,55 +1,11 @@
-<!-- Файл: index.html -->
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<title>Ночная поездка ― Главная</title>
-		<style>
-			body {
-				font-family: Arial, sans-serif;
-				background: #1a1a1a;
-				color: #f0f0f0;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				height: 100vh;
-				margin: 0;
-			}
-			.container {
-				text-align: center;
-				max-width: 600px;
-				padding: 20px;
-				background: #2b2b2b;
-				border-radius: 8px;
-				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-			}
-			h1 {
-				margin-bottom: 16px;
-				font-size: 2em;
-			}
-			p {
-				font-size: 1.1em;
-				line-height: 1.5;
-				margin-bottom: 24px;
-			}
-			.start-button {
-				display: inline-block;
-				padding: 12px 24px;
-				font-size: 1em;
-				color: #1a1a1a;
-				background: #f0c040;
-				text-decoration: none;
-				border-radius: 4px;
-				transition: background 0.2s;
-			}
-			.start-button:hover {
-				background: #ddb030;
-			}
-		</style>
 	</head>
 	<body>
-		<div class="container">
+		<div>
 			<h1>Ночная поездка</h1>
 			<p>
 				Вы отправляетесь в таинственное ночное путешествие на поезде Москва →
@@ -58,7 +14,12 @@
 				ваш выбор приведёт к новому повороту сюжета и откроет одну из трёх
 				возможных развязок: счастливую, горькую или мистическую.
 			</p>
-			<a class="start-button" href="chapter1_scene1.html">Начать игру</a>
+			<nav>
+				<a href="chapter1_scene1.html">Начать игру</a>
+				<a href="chapters.html">Главы</a>
+				<a href="about.html">Об игре</a>
+				<a href="authors.html">Об авторах</a>
+			</nav>
 		</div>
 	</body>
 </html>
