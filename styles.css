@@ -5,7 +5,7 @@
 }
 
 body {
-	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'Tahoma', sans-serif;
 	background: url('bg1.jpg') center/cover no-repeat fixed;
 	background-color: #121212;
 	color: #e0e0e0;
@@ -32,13 +32,17 @@ body::before {
 	left: 0;
 	width: 100%;
 	height: 100%;
-
-	opacity: 0.2;
-	z-index: -1;
+	pointer-events: none;
+	background: radial-gradient(
+		circle at center,
+		rgba(0, 0, 0, 0) 40%,
+		rgba(0, 0, 0, 0.7) 100%
+	);
+	z-index: 0;
 }
 
 .container {
-	max-width: 800px;
+	max-width: 900px;
 	margin: 2rem auto;
 	padding: 2rem;
 	background-color: rgba(30, 30, 30, 0.8);
@@ -132,7 +136,7 @@ h2 {
 
 p {
 	margin-bottom: 1.5rem;
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 	line-height: 1.7;
 }
 
@@ -194,7 +198,7 @@ li {
 .start-button {
 	display: inline-block;
 	margin-top: 2rem;
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 	text-align: center;
 	background-color: #4fc3f7;
 	color: #121212;
@@ -246,28 +250,6 @@ section:last-child {
 	margin: 0 auto 2rem;
 }
 
-.ending {
-	padding: 1.5rem;
-	border-radius: 3px;
-	margin-top: 2rem;
-	animation: fadeIn 1s ease-out;
-}
-
-.happy-ending {
-	background-color: rgba(76, 175, 80, 0.1);
-	border-left: 3px solid #4caf50;
-}
-
-.bitter-ending {
-	background-color: rgba(244, 67, 54, 0.1);
-	border-left: 3px solid #f44336;
-}
-
-.ghost-ending {
-	background-color: rgba(156, 39, 176, 0.1);
-	border-left: 3px solid #9c27b0;
-}
-
 .about-list {
 	list-style-type: none;
 	padding-left: 0;
@@ -302,17 +284,6 @@ section:last-child {
 	transition: all 0.3s ease;
 }
 
-.back-button::before {
-	content: '← ';
-}
-
-.back-button:hover,
-.back-button:focus {
-	background-color: rgba(79, 195, 247, 0.2);
-	color: #ffffff;
-	transform: translateX(-5px);
-}
-
 .author-info {
 	background-color: rgba(66, 66, 66, 0.5);
 	padding: 1.5rem;
@@ -328,22 +299,4 @@ section:last-child {
 
 .author-info p {
 	margin-bottom: 0.5rem;
-}
-
-@media (max-width: 768px) {
-	.nav-links {
-		flex-wrap: wrap;
-	}
-
-	nav a {
-		margin: 0 0.5rem;
-		padding: 0.5rem 0.7rem;
-		font-size: 0.9rem;
-	}
-
-	.logo img {
-		height: 35px;
-		width: 35px;
-		margin: 5px;
-	}
 }
