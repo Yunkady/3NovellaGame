@@ -6,7 +6,7 @@
 
 body {
 	font-family: 'Tahoma', sans-serif;
-	background: url('bg1.jpg') center/cover no-repeat fixed;
+	background: url('../images/../images/bg1.jpg') center/cover no-repeat fixed;
 	background-color: #121212;
 	color: #e0e0e0;
 	line-height: 1.6;
@@ -299,4 +299,9 @@ section:last-child {
 
 .author-info p {
 	margin-bottom: 0.5rem;
+}
+
+.audio {
+	opacity: 0.33;
+	text-align: center;
 }
